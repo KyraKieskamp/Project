@@ -27,15 +27,15 @@ Depending on the data found in the first week, the outline of the application wi
 The data sources for the application are various academic published papers on the OBELIX project. From these papers the necessary data will be extracted manually and be converted into usable data sets. 
 
 The following data sets will be extracted and/or created:
-1.	Mouse model data for various endocrine disrupting chemicals.
-2.	Exposure and prenatal and postnatal chemical levels in blood in the mother-child cohorts for all researched chemicals. 
-a.	Information for the chemicals PCB-153 and p,p’-DDE  (already found – Iszatt et al. 2015).
-3.	Data on relation of a chemical exposure to potential development in obesity.
-a.	Information for the chemicals PCB-153 and p,p’-DDE  (already found – Iszatt et al. 2015).
-4.	Characteristics of all the mother-child cohorts, such as maternal height, breastfeeding, birth height and weight of the children (already found – Iszatt et al. 2015).
-5.	Data on environmental concentrations of chemicals in the OBELIX study (might be found at an alternative source, namely the World Health Organization). 
-6.	Risk assessment data on all chemicals in the OBELIX study(already found at: http://cordis.europa.eu/result/rcn/153420_en.html).
-7.	If necessary, additional information regarding the parmacokinetic model used for determining the infant blood concentrations could be obtained from the respective paper. Otherwise, a link to that paper could be implemented in the visualization.
+- 1.	Mouse model data for various endocrine disrupting chemicals.
+- 2.	Exposure and prenatal and postnatal chemical levels in blood in the mother-child cohorts for all researched chemicals. 
+- a.	Information for the chemicals PCB-153 and p,p’-DDE  (already found – Iszatt et al. 2015).
+- 3.	Data on relation of a chemical exposure to potential development in obesity.
+- a.	Information for the chemicals PCB-153 and p,p’-DDE  (already found – Iszatt et al. 2015).
+- 4.	Characteristics of all the mother-child cohorts, such as maternal height, breastfeeding, birth height and weight of the children (already found – Iszatt et al. 2015).
+- 5.	Data on environmental concentrations of chemicals in the OBELIX study (might be found at an alternative source, namely the World Health Organization). 
+- 6.	Risk assessment data on all chemicals in the OBELIX study(already found at: http://cordis.europa.eu/result/rcn/153420_en.html).
+- 7.	If necessary, additional information regarding the parmacokinetic model used for determining the infant blood concentrations could be obtained from the respective paper. Otherwise, a link to that paper could be implemented in the visualization.
 
 Mentioned reference: 
 Iszatt N, Stigum H, Verner M, White RA, Govarts E, Murinova LP, Schoeters G, Trnovec T, Legler J, Pelé F, Botton J, Chevrier C, Wittsiepe J, Ranft U, Vandentorren S, Kasper-Sonneberg M, Klümper  C, Weisglas-Kuperus N, Polder A, Eggesbø M, OBELIX. 2015. Prenatal and Postnatal Exposure to Persistent Organic Pollutants and Infant Growth: A Pooled Analysis of Seven European Birth Cohorts. 
@@ -44,21 +44,21 @@ Environ Health Perspect 123: 730-736; doi:10.1289/ehp.1308005
 # Separate parts of the application and the interaction between them
 
 The following separate features of the application will be implemented:
-1.	A risk assessment graph. [MVP - 2 chemicals]
-a.	Comparision between found chemical levels in the OBELIX study and the chemical levels used to calcualte the current tolerable daily intake (TDI).
-2.	Map of Europe representing the mother-child cohorts of the OBELIX study. [MVP]
-3.	Characteristics of the mother-child cohorts. [MVP]
-a.	Visualization type: to be determined.
-4.	Infant blood concentrations for chemical prenatal and postnatal exposure for the various cohorts. [MVP – 2 chemcial]
-a.	Probably represented in a bar graph.
-5.	Association between total exposure of chemicals from conception to 2 years with effect on weight score.
-a.	Presentation: to be determined
-6.	Results from mouse models for the chemicals in the OBELIX study.
-a.	Probably represented in a bar or line graph.
-7.	Overview of all chemcials researched in the OBELIX study (and their characteristics, type of chemcials, etc). [MVP – 2 chemicals]
-a.	Represented as image and a text box for the characteristics.
-8.	Environmental concententrations of the chemicals.
-a.	Presented in a bar or line graph.
+-1.	A risk assessment graph. [MVP - 2 chemicals]
+-a.	Comparision between found chemical levels in the OBELIX study and the chemical levels used to calcualte the current tolerable daily intake (TDI).
+-2.	Map of Europe representing the mother-child cohorts of the OBELIX study. [MVP]
+-3.	Characteristics of the mother-child cohorts. [MVP]
+-a.	Visualization type: to be determined.
+-4.	Infant blood concentrations for chemical prenatal and postnatal exposure for the various cohorts. [MVP – 2 chemcial]
+-a.	Probably represented in a bar graph.
+-5.	Association between total exposure of chemicals from conception to 2 years with effect on weight score.
+-a.	Presentation: to be determined
+-6.	Results from mouse models for the chemicals in the OBELIX study.
+-a.	Probably represented in a bar or line graph.
+-7.	Overview of all chemcials researched in the OBELIX study (and their characteristics, type of chemcials, etc). [MVP – 2 chemicals]
+-a.	Represented as image and a text box for the characteristics.
+-8.	Environmental concententrations of the chemicals.
+-a.	Presented in a bar or line graph.
 
 
 Interaction between features:
