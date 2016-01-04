@@ -44,21 +44,21 @@ Environ Health Perspect 123: 730-736; doi:10.1289/ehp.1308005
 # Separate parts of the application and the interaction between them
 
 The following separate features of the application will be implemented:
--1.	A risk assessment graph. [MVP - 2 chemicals]
--a.	Comparision between found chemical levels in the OBELIX study and the chemical levels used to calcualte the current tolerable daily intake (TDI).
--2.	Map of Europe representing the mother-child cohorts of the OBELIX study. [MVP]
--3.	Characteristics of the mother-child cohorts. [MVP]
--a.	Visualization type: to be determined.
--4.	Infant blood concentrations for chemical prenatal and postnatal exposure for the various cohorts. [MVP – 2 chemcial]
--a.	Probably represented in a bar graph.
--5.	Association between total exposure of chemicals from conception to 2 years with effect on weight score.
--a.	Presentation: to be determined
--6.	Results from mouse models for the chemicals in the OBELIX study.
--a.	Probably represented in a bar or line graph.
--7.	Overview of all chemcials researched in the OBELIX study (and their characteristics, type of chemcials, etc). [MVP – 2 chemicals]
--a.	Represented as image and a text box for the characteristics.
--8.	Environmental concententrations of the chemicals.
--a.	Presented in a bar or line graph.
+- 1.	A risk assessment graph. [MVP - 2 chemicals]
+- a.	Comparision between found chemical levels in the OBELIX study and the chemical levels used to calcualte the current tolerable daily intake (TDI).
+- 2.	Map of Europe representing the mother-child cohorts of the OBELIX study. [MVP]
+- 3.	Characteristics of the mother-child cohorts. [MVP]
+- a.	Visualization type: to be determined.
+- 4.	Infant blood concentrations for chemical prenatal and postnatal exposure for the various cohorts. [MVP – 2 chemcial]
+- a.	Probably represented in a bar graph.
+- 5.	Association between total exposure of chemicals from conception to 2 years with effect on weight score.
+- a.	Presentation: to be determined
+- 6.	Results from mouse models for the chemicals in the OBELIX study.
+- a.	Probably represented in a bar or line graph.
+- 7.	Overview of all chemcials researched in the OBELIX study (and their characteristics, type of chemcials, etc). [MVP – 2 chemicals]
+- a.	Represented as image and a text box for the characteristics.
+- 8.	Environmental concententrations of the chemicals.
+- a.	Presented in a bar or line graph.
 
 
 Interaction between features:
