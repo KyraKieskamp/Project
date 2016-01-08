@@ -19,7 +19,7 @@ So, the goal of this project is to create a general and understandable interacti
 #Preliminary sketch of application
 
 ![](doc/raw_sketch.png)
-![](doc/overview_OBELIX_project.jpg)
+![](doc/OBELIX_project.png)
 ![](doc/basic_view_sketch.png)
 ![](doc/interactive_view_sketch.png)
 
