@@ -24,10 +24,10 @@ For the implemented features both a minimum viable product (MVP) is presented as
 
 #Expansion on MVP
 
-•	A risk assessment bar graph for all other OBELIX chemicals. 
-	o	Comparison between found chemical levels in the OBELIX study and the chemical levels used to calculate the current tolerable daily intake (TDI).
-•	Overview of all chemicals researched in the OBELIX study (and their characteristics, type of chemicals, etc). 
-	o	Represented as image in a blue circle on the left hand side of the webpage.
+- •	A risk assessment bar graph for all other OBELIX chemicals. 
+- 	o	Comparison between found chemical levels in the OBELIX study and the chemical levels used to calculate the current tolerable daily intake (TDI).
+- •	Overview of all chemicals researched in the OBELIX study (and their characteristics, type of chemicals, etc). 
+- 		o	Represented as image in a blue circle on the left hand side of the webpage.
 	o	A text box for the characteristics.
 	o	Bar graph with chemical concentrations in food or/and in the environment (for all chemicals). 
 •	Expansion on graphs human study and mouse study
