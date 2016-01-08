@@ -9,18 +9,18 @@ In this DESIGN document, the to be implemented features, advanced sketches, the 
 For the implemented features both a minimum viable product (MVP) is presented as well as possible additional implementations and functionality. The features indicated for the MVP have to be totally finalized in 2 weeks. 
 
 #Minimum Viable Product (MVP)
-•	A risk assessment bar graph of the 2 chemicals which the OBELIX project proposed as risk-chemicals. One graph where they are together (initial visualization), and two separate bar graphs for each chemical. 
-	o	Comparison between found chemical levels in the OBELIX study and the chemical levels used to calculate the current tolerable daily intake (TDI).
-•	Overview of 2 chemicals researched in the OBELIX study (and their characteristics, type of chemicals, etc). 
-	o	Represented as image in a blue circle on the left hand side of the webpage
-	o	A text box for the characteristics.
-•	Map of Europe representing the mother-child cohorts of the OBELIX study. 
-•	Characteristics of the mother-child cohorts. 
-	o	Visualization type: table. 
-•	Visualization of effects determined from mouse models for the chemicals in the OBELIX study.
-	o	Images presenting the type of effect (see the balance image at Human study in the second advanced sketch) – this will be alike for the mouse model, aka. Animal study. 
-•	Visualization of effects in humans after exposure to OBELIX chemicals.
-	o	Images presenting the type of effect (see the balance image at Human study in the second advanced sketch)
+- •	A risk assessment bar graph of the 2 chemicals which the OBELIX project proposed as risk-chemicals. One graph where they are together (initial visualization), and two separate bar graphs for each chemical. 
+- 	o	Comparison between found chemical levels in the OBELIX study and the chemical levels used to calculate the current tolerable daily intake (TDI).
+- •	Overview of 2 chemicals researched in the OBELIX study (and their characteristics, type of chemicals, etc). 
+- 	o	Represented as image in a blue circle on the left hand side of the webpage
+- 	o	A text box for the characteristics.
+- •	Map of Europe representing the mother-child cohorts of the OBELIX study. 
+- •	Characteristics of the mother-child cohorts. 
+- 	o	Visualization type: table. 
+- •	Visualization of effects determined from mouse models for the chemicals in the OBELIX study.
+-	o	Images presenting the type of effect (see the balance image at Human study in the second advanced sketch) – this will be alike for the mouse model, aka. Animal study. 
+- •	Visualization of effects in humans after exposure to OBELIX chemicals.
+-	o	Images presenting the type of effect (see the balance image at Human study in the second advanced sketch)
 
 #Expansion on MVP
 
