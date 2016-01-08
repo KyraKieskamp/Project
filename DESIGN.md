@@ -9,29 +9,36 @@ In this DESIGN document, the to be implemented features, advanced sketches, the 
 For the implemented features both a minimum viable product (MVP) is presented as well as possible additional implementations and functionality. The features indicated for the MVP have to be totally finalized in 2 weeks. 
 
 #Minimum Viable Product (MVP)
-- •	A risk assessment bar graph of the 2 chemicals which the OBELIX project proposed as risk-chemicals. One graph where they are together (initial visualization), and two separate bar graphs for each chemical. 
+- •	A risk assessment bar graph of the 2 chemicals which the OBELIX project proposed as risk-chemicals. One graph where they are together (initial visualization), and two separate bar graphs for each chemical:
 - 	o	Comparison between found chemical levels in the OBELIX study and the chemical levels used to calculate the current tolerable daily intake (TDI).
-- •	Overview of 2 chemicals researched in the OBELIX study (and their characteristics, type of chemicals, etc). 
+
+- •	Overview of 2 chemicals researched in the OBELIX study (and their characteristics, type of chemicals, etc): 
 - 	o	Represented as image in a blue circle on the left hand side of the webpage
 - 	o	A text box for the characteristics.
+
 - •	Map of Europe representing the mother-child cohorts of the OBELIX study. 
-- •	Characteristics of the mother-child cohorts. 
+
+- •	Characteristics of the mother-child cohorts:
 - 	o	Visualization type: table. 
-- •	Visualization of effects determined from mouse models for the chemicals in the OBELIX study.
--	o	Images presenting the type of effect (see the balance image at Human study in the second advanced sketch) – this will be alike for the mouse model, aka. Animal study. 
-- •	Visualization of effects in humans after exposure to OBELIX chemicals.
+
+- •	Visualization of effects determined from mouse models for the chemicals in the OBELIX study:
+-	o	Images presenting the type of effect (see the balance image at Human study in the second advanced sketch) – this will be alike for the mouse model, aka. Animal study.
+
+- •	Visualization of effects in humans after exposure to OBELIX chemicals:
 -	o	Images presenting the type of effect (see the balance image at Human study in the second advanced sketch)
 
 #Expansion on MVP
 
-- •	A risk assessment bar graph for all other OBELIX chemicals. 
+- •	A risk assessment bar graph for all other OBELIX chemicals:
 - 	o	Comparison between found chemical levels in the OBELIX study and the chemical levels used to calculate the current tolerable daily intake (TDI).
-- •	Overview of all chemicals researched in the OBELIX study (and their characteristics, type of chemicals, etc). 
-- 		o	Represented as image in a blue circle on the left hand side of the webpage.
-	o	A text box for the characteristics.
-	o	Bar graph with chemical concentrations in food or/and in the environment (for all chemicals). 
-•	Expansion on graphs human study and mouse study
-	o	Line graphs with exact type of effect at exactly which concentration. 
+
+- •	Overview of all chemicals researched in the OBELIX study (and their characteristics, type of chemicals, etc):
+- 	o	Represented as image in a blue circle on the left hand side of the webpage.
+-	o	A text box for the characteristics.
+-	o	Bar graph with chemical concentrations in food or/and in the environment (for all chemicals).
+
+- •	Expansion on graphs human study and mouse study:
+-	o	Line graphs with exact type of effect at exactly which concentration. 
 
 
 The HTML page will be made in html. A dashboard will be used for connecting the features. The features (bar graph, line graph) will be created with D3/svg. 
@@ -65,21 +72,23 @@ Creating a dashboard with all the features mentioned in the ‘Feature Implement
 #Minimum Viable Product (MVP)
 Interaction between features:
 
-•	With the following mouse actions on the chemical images on the left side of the webpage (see advanced sketches).
-	o	Mouse-hover: Information on the chemical will show up in a text box.
-	o	Mouse-click: The graphs for the Risk Assessment (top of webpage), the explanatory text for the Risk Assessment, and the visualizations for the human study and animal study will change to present the data for the clicked chemical. 
-•	Europe/cohort map.
-	o	On mouse-hover over country: Information on the cohort in the country will pop-up.
-	o	On mouse-click on country: Detailed information in a table on the cohort in the country will show up besides the map. 
+- •	With the following mouse actions on the chemical images on the left side of the webpage (see advanced sketches):
+- 	o	Mouse-hover: Information on the chemical will show up in a text box.
+- 	o	Mouse-click: The graphs for the Risk Assessment (top of webpage), the explanatory text for the Risk Assessment, and the visualizations for the human study and animal study will change to present the data for the clicked chemical. 
+
+- •	Europe/cohort map:
+- 	o	On mouse-hover over country: Information on the cohort in the country will pop-up.
+- 	o	On mouse-click on country: Detailed information in a table on the cohort in the country will show up besides the map. 
 
 #Expansion on MVP
 Interaction between features:
 
-•	With the following mouse actions on the chemical images on the left side of the webpage (see advanced sketches).
-	o	Mouse-hover: Further information on food/environmental concentrations will show as well, besides just the text box.
-•	Human study and animal study
-	o	On mouse-hover on effect image: Short description of the effect shown is given in a pop-up. (For example, with the balance image: This stands for an adverse effect noticed in the energy-balance of a person/animal, and this means that….). 
-	o	On mouse-click on effect image: A text box/graph appears with more detailed information on the specific health-effects. For example, at which different concentrations this was noticed, how reliable the data is, in which cohorts/animals this data was found. 
+- •	With the following mouse actions on the chemical images on the left side of the webpage (see advanced sketches):
+- 	o	Mouse-hover: Further information on food/environmental concentrations will show as well, besides just the text box.
+
+- •	Human study and animal study:
+- 	o	On mouse-hover on effect image: Short description of the effect shown is given in a pop-up. (For example, with the balance image: This stands for an adverse effect noticed in the energy-balance of a person/animal, and this means that….). 
+- 	o	On mouse-click on effect image: A text box/graph appears with more detailed information on the specific health-effects. For example, at which different concentrations this was noticed, how reliable the data is, in which cohorts/animals this data was found. 
 
 
 Idea after Friday’s presentation:
@@ -91,21 +100,24 @@ Various data sources are used for this visualization. Most data is obtained from
 
 Overview of all the data:
 Format: Database type/table (data source)
-•	Chemical data
-	o	Images (web/chemspider)
-	o	Characteristics (EFSA database)
-	o	Environment/food (probably EFSA database)
-•	Human Study data 
-	o	Characteristics (OBELIX published articles)
-	o	Pre/postnatal data (OBELIX published articles)
-	o	relation exposure --> weight (OBELIX pubished articles)
-	o	Effects of chemicals (OBELIX final result)
-•	Mouse model data
-	o	Characteristics (OBELIX final result/other published articles)
-	o	Chemical levels (OBELIX final result/other published articles)
-•	Risk Assessment data
-	o	Values OBELIX chemical levels (OBELIX final result)
-	o	Values compared chemcial levels (OBELIX final result)
+- •	Chemical data:
+-  	o	Images (web/chemspider)
+- 	o	Characteristics (EFSA database)
+- 	o	Environment/food (probably EFSA database)
+
+- •	Human Study data:
+- 	o	Characteristics (OBELIX published articles)
+- 	o	Pre/postnatal data (OBELIX published articles)
+- 	o	relation exposure --> weight (OBELIX pubished articles)
+- 	o	Effects of chemicals (OBELIX final result)
+
+- •	Mouse model data:
+- 	o	Characteristics (OBELIX final result/other published articles)
+- 	o	Chemical levels (OBELIX final result/other published articles)
+
+- •	Risk Assessment data:
+- 	o	Values OBELIX chemical levels (OBELIX final result)
+- 	o	Values compared chemcial levels (OBELIX final result)
 
 More details in: project/raw_data/W1_Overview_datatypes_O05012016
 
