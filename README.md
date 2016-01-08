@@ -19,6 +19,9 @@ So, the goal of this project is to create a general and understandable interacti
 #Preliminary sketch of application
 
 ![](doc/raw_sketch.png)
+![](doc/basic_view_sketch.png)
+![](doc/interactive_view_sketch.png)
+
 
 Depending on the data found in the first week, the outline of the application will be adapted. 	
 
