@@ -2,6 +2,8 @@
 Project - Data Visualization of the OBELIX research
 Kyra Kieskamp
 
+Navigation through the maps: index.html contains the project. project.html is currently alike to index.html. The images/graphs are in the javascript directory in the file riskgraph.js. Effectsgraph.js is currently still barely created. All the images of the chemicals are in the directory images. The directories trials/prototype only contain raw ideas and creations. 
+
 The goal of this project is to create a general and understandable interactive overview of the OBELIX research (or part of the research for the Minimum Viable Product) for the general public. The Obelix study is a large scale research investigating the effect of certain chemicals on potential development of obesity. In the overview various objectives of this study will be visualized and final results will be presented. 
 
 

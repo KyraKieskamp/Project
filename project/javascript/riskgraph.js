@@ -106,7 +106,7 @@ var g = svg2.append("g");
     .style("stroke", "steelblue")
     // .style("fill", "steelblue")
     .style("fill", "rgba(255, 255, 255, 0)")
-    .style("stroke-width", 5);
+    .style("stroke-width", 0);
 
     // brown colour on hover
     d3.selectAll(".circle")
