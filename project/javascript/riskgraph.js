@@ -7,8 +7,8 @@ var cwidth = 100;
 var cheight = 100;
 
 var svg2 = d3.select("body").append("svg")
-    .attr("width", 200)
-    .attr("height", 200)
+    .attr("width", 2000)
+    .attr("height", 2000)
     // .style("border", 1px solid black);
 
 // var circle = svg2.append("circle")
@@ -40,21 +40,59 @@ var g = svg2.append("g");
       .attr("y", 30)
       .attr("width", cwidth)
       .attr("height", cheight);
-      // .style("stroke", "black")
-      // .style("stroke-width", 3);
-      // .attr("border", 10);
-// var bpa = g.append("image")
-//     .attr("class", "bpa")
-//     .attr("xlink:href", "../images/bpa_button.png")
-//       .attr("x", 30)
-//       .attr("y", 30)
-//       .attr("width", cwidth)
-//       .attr("height", cheight);
+
+var g = svg2.append("g");
+
+  // svg2.selectAll("g.image")
+    // .data(images)
+    // .enter()
+    g.append("image")
+    // .attr("class", function(d) {return images.chemical; })
+    .attr("xlink:href", function(d) {return images[1].link; })
+      .attr("x", 30)
+      .attr("y", 200)
+      .attr("width", cwidth)
+      .attr("height", cheight);
+
+var g = svg2.append("g");
+
+  // svg2.selectAll("g.image")
+    // .data(images)
+    // .enter()
+    g.append("image")
+    // .attr("class", function(d) {return images.chemical; })
+    .attr("xlink:href", function(d) {return images[2].link; })
+      .attr("x", 30)
+      .attr("y", 400)
+      .attr("width", cwidth)
+      .attr("height", cheight);
+
+var g = svg2.append("g");
+
+  // svg2.selectAll("g.image")
+    // .data(images)
+    // .enter()
+    g.append("image")
+    // .attr("class", function(d) {return images.chemical; })
+    .attr("xlink:href", function(d) {return images[3].link; })
+      .attr("x", 30)
+      .attr("y", 600)
+      .attr("width", cwidth)
+      .attr("height", cheight);
 
 
+var g = svg2.append("g");
 
-
-
+  // svg2.selectAll("g.image")
+    // .data(images)
+    // .enter()
+    g.append("image")
+    // .attr("class", function(d) {return images.chemical; })
+    .attr("xlink:href", function(d) {return images[4].link; })
+      .attr("x", 30)
+      .attr("y", 800)
+      .attr("width", cwidth)
+      .attr("height", cheight);
 
 
     // g.selectAll(".circle")
