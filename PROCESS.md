@@ -37,3 +37,7 @@ Friday
 Adaptations need to be made for the 3rd graph - the effect graph. Possibly an other bar graph, but that would be two bar graphs in the same visualization. 
 Over the weekend, have the implementations of the chemicals and their images, together with the bar graph
 For the interactive table a decision needs to be made to have a feature where you can select the variables the user wants to be shown in the table. The other, easier, option is to first have all the variables shown in the table, and then have them reordered when clicked on one of the features. 
+
+# day 12
+Tuesday
+Create a basic interactive (checkbox) table first. Then continue with the bar graph. Continue with the interactive (chekbox) - full data - table at a later point this week. Right now, the checkbox and table build up is functional in testCheckbox.html using both html and javascript and d3 to load in the data. 

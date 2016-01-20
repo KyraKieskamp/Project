@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Example OBELIX Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="d3/d3.min.js" charset="utf-8"></script>
+<!-- 		<link rel="stylesheet" type="text/css" href="d3line.css"/> -->
+<style>
+
+/*.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}*/
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+<body>
+<input type="button" value="Generate a table." onclick="generate_table()">
+<script>
+  // initiating data
+
+	// var data; // a global
+	function generate_table() {
+	d3.json("data/cohort_trial.json", function(error, json) {
+	  	if (error) return console.warn(error);
+	  	data = json;
+
+	  	// check the checkboxes (numbers)
+		  // get the reference for the body
+		  var body = document.getElementsByTagName("body")[0];
+		 
+		  // creates a <table> element and a <tbody> element
+		  var tbl     = document.createElement("table");
+		  var tblBody = document.createElement("tbody");
+		 
+		  // creating all cells
+		  for (var i = 0; i < data.length; i++) {
+		    // creates a table row
+		    var row = document.createElement("tr");
+
+		    for (var j = 0; j < data[i].length; j++) {
+      // Create a <td> element and a text node, make the text
+      // node the contents of the <td>, and put the <td> at
+      // the end of the table row
+			var cell = document.createElement("td");
+			var cellText = document.createTextNode(data[i][j]);
+			cell.appendChild(cellText);
+			row.appendChild(cell);
+			}
+
+			// add the row to the end of the table body
+			tblBody.appendChild(row);
+			}
+
+			// put the <tbody> in the <table>
+			tbl.appendChild(tblBody);
+			// appends <table> into <body>
+			body.appendChild(tbl);
+			// sets the border attribute of tbl to 2;
+			tbl.setAttribute("border", "2");
+			
+
+	});
+	}
+</script>
+</body>
+</html>
+
+
+ 
+    
