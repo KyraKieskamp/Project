@@ -27,7 +27,7 @@ console.log("hello")
       .ticks(10);
 
   // adding svg 
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("body").selectAll("#risk_assessment").append("svg")
       .attr("class", "svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
@@ -35,8 +35,9 @@ console.log("hello")
       .attr("transform", "translate("+ margin.left + "," + margin.top + ")");
 
   // initiating data
-  d3.tsv("../data/chemicalsRA.tsv", type, function(error, data){
+  d3.tsv("../data/chemicals2.tsv", type, function(error, data){
     if (error) throw error;
+console.log(data)
 
     x.domain(data.map(function(d) { return d.Chemicals; }));
     y.domain([0, d3.max(data, function(d) {return d[chemical]; })]);
@@ -93,8 +94,8 @@ console.log("hello")
   });        
 }
 
-var chemical = "bpa"
-function type(d) {
+// var chemical = "bpa"
+function type(d, chemical) {
     d[chemical] = +d[chemical];
     return d;
   }

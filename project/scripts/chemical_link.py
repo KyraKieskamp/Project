@@ -3,7 +3,7 @@ import csv
 
 
 # Opens the input file
-file = open('../data/chemical_links.csv', 'r')
+file = open('../data/cohort_trial2.csv', 'r')
 rows = file.read().split("\n")
 # print rows
 
@@ -15,5 +15,5 @@ for row in rows:
     col = row.split(";")
     data.append(col)
 
-with open('../data/chemical_links.json', 'wb') as f:
+with open('../data/cohort_trial2.json', 'wb') as f:
      json.dump(data, f, indent=4)

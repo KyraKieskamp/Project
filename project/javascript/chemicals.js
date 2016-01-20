@@ -5,9 +5,10 @@ function chemical_images() {
 		data = json;
 		console.log(data[2][1])
 		// get sidenavigation element
-		var body = document.getElementsByTagName("body")[0];
-		var sidenav = body.getElementsByClassName("col-sm-2 sidenav")
-		console.log(sidenav)
+		// var body = document.getElementsByTagName("body").
+		var body = document.getElementById("chemicals");
+		// var sidenav = body.getElementById("chemicals")
+		console.log(body)
 
 		// create the images for chemicals
 		for (var i = 1; i < data[0].length; i++) {

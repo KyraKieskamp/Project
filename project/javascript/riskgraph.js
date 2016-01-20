@@ -1,4 +1,5 @@
 // D3 bar graph javascript
+// for old version of the html 
 
 // how to append multiple images: http://stackoverflow.com/questions/32652036/how-to-append-multiple-images-in-svg-using-javascript
 var chemical = "bpa"

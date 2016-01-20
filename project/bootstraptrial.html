@@ -71,41 +71,110 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
+      <div id = "chemicals">
+      </div>
+      <img  src="images/bpa_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
+      <input type="button" onclick= "InitChart('bpa')" value="bpa">
+      <img  src="images/bde-47_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
+      <input type="button" onclick= "InitChart('bde47')" value="bde47">
+      <img  src="images/dde_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
+      <input type="button" onclick= "InitChart('p'pdde)" value="p'pdde">
+      <img  src="images/deph_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
+      <input type="button" onclick= "InitChart('dehp')" value="dehp">
       <img  src="images/PCB153_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
-      <input type="button" onclick= "InitChart('bpa')" value="PFOA">
+      <input type="button" onclick= "InitChart('pcb153')" value="pcb153">
+      <img  src="images/pfoa_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
+      <input type="button" onclick= "InitChart('pfoa')" value="pfoa">
+      <img  src="images/tcdd_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
+      <input type="button" onclick= "InitChart('tcdd')" value="tcdd">
 <!--       <p><a href="#">Link</a></p> -->
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
-      <script src="javascript/riskgraph2.js" ></script>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1>OBELIX study 2009-2013</h1>
+      <h3> Executive Summary:</h3>
+        <p>
+        OBELIX (OBesogenic Endocrine disrupting chemicals (EDCs): LInking prenatal eXposure to the development of obesity
+        later in life) is a multidisciplinary European research project that was performed from May 2009 to November 2013. The
+        main goal of OBELIX was to investigate if early life exposure to EDCs plays a role in the development of obesity and
+        related disorders later in life. OBELIX investigated six major classes of EDCs, including dioxins, polychlorinated
+        biphenyls, brominated flame retardants, organochlorine pesticides, phthalates, and perfluorinated alkyl acids (PFAAs) (obtained from OBELIX report summary).
+        </p>
+        <hr>
+      <h3>Project Context and Objectives:</h3>
+        <p>The incidence of childhood obesity has reached epidemic proportions globally. Despite advancements in knowledge on
+        the endocrine and neuronal regulation of energy balance, there is still much uncertainty related to the etiology and
+        P age 1 o f 12
+        Research
+        and Innovation
+        underlying physiological mechanisms of obesity. There is accumulating evidence that factors that influence long-term
+        risk of obesity and related disorders begin very early in life. Early life exposure to environmental contaminants has
+        been implicated in altering developmental metabolic programming, resulting in possible higher susceptibility to obesity.
+        The OBELIX (OBesogenic Endocrine disrupting chemicals: LInking prenatal eXposure to the development of obesity later
+        in life) project examines the hypothesis that prenatal exposure to endocrine disrupting compounds (EDCs) in food plays
+        a role in the development of obesity later in life. This project focused on assessing prenatal exposure to chemicals
+        from six major classes of EDCs found in food including dioxins and dioxin-like polychlorinated biphenyls (PCBs), nondioxin-
+        like PCBs, brominated flame retardants (BFRs), organochlorine pesticides, phthalates and perfluorinated alkyl
+        acids (PFAAs), e.g. perfluorooctanoic acid (PFOA) and perfluorooctanesulfonate (PFOS).</p>
+
       <hr>
-      <h3>Test</h3>
+      <h3>Risk Assessment</h3>
+        <div id = "risk_assessment">
+        </div>
       <p>Lorem ipsum...</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>One of the main goals of OBELIX is to ascertain if there are risks for obesity or related metabolic disorders in children
+        at current background levels of EDCs. To this end, we performed risk assessment using the 5 EDCs that were tested in
+        animal studies in WP5. Two of the OBELIX EDCs, namely DDE and BDE-47, were not included in this risk assessment
+        exercise, as we did not perform animal studies on these compounds in OBELIX. It should be mentioned for DDE,
+        however, that a consistent set of observations was found in WP1 indicating that prenatal DDE is associated with
+        accelerated growth in early childhood, and increased BMI and serum leptin levels at age 6 years. This would suggest
+        that current background levels of DDE are not without risk and further examination of health risks of DDE exposure in
+        children is warranted. To our knowledge there are very limited animal experiments in the literature that examine
+        perinatal exposure to DDE and latent effects on metabolism and energy balance. This is an important knowledge gap
+        that should be studied in the future.
+        For the risk assessment, we selected the most sensitive critical effect observed in OBELIX animal studies and
+        compared this to benchmark dose levels (BMDL) established by EFSA. We then calculated a corresponding tolerable
+        daily intake (TDI) level and compared this to exposure and/or body burden (BB) levels reported by EFSA, taking
+        important exposure routes into account. Where possible we also used calculated food exposure data from WP3, in
+        which food frequency questionnaires (FFQ) from FLEHS, Michalovce and LINC were used to calculate exposure to EDCs
+        through the diet.</p>
+
+        <hr>
+        <h3>Effects of chemicals</h3>
+        <div id = "chemicals_effect">
+        </div>
+      <p>Lorem ipsum...</p>
+        <p>A total of 5 long term animal studies were carried out in OBELIX. The selected test EDCs were BPA, PFOA, TCDD, DEHP
+        and PCB 153. Maternal exposure to the chemicals at low concentrations (generally below NOAEL for developmental
+        toxicity) was given through the diet during pre-mating, gestation and lactation (total of 9 weeks). C57BL/6 (B6) dams
+        were mated with FVB males, and after weaning, exposure was stopped, and the F1 progeny were maintained for a
+        period of 20 to 55 weeks of age.</p>
+
+        <hr>
+        <p>Growth during early childhood and BMI at 6 years showed an relation with early life exposure to EDCs. Pooling cohorts
+        gave a large sample size, allowing distinction between investigation of effects due to (modelled) prenatal and postnatal
+        exposure to PCBs, DDE and HCB. Distinct effects were observed for the different chemicals depending on pre- or
+        postnatal exposure. Our studies indicated that an increase in growth and BMI at 6 years was associated with prenatal
+        DDE exposure. In contrast, a significant decrease in growth was associated with postnatal PCB-153 exposure (Iszatt et
+        al, 2014, submitted). Preliminary studies also indicate a relation with perinatal exposure to dioxin-like compounds and
+        BMI at 6 years (Iszatt et al, in preparation).</p>
+
     </div>
     <div class="col-sm-6 text-left"> 
-      <h1>Welcome</h1>
+      <h1>Effects graph explanation etc</h1>
     </div>
 
-    <div class="col-sm-4 sidenav">
+<!--     <div class="col-sm-4 sidenav">
       <div class="well">
         <p>ADS</p>
       </div>
       <div class="well">
         <p>ADS</p>
       </div>
-    </div>
+    </div> -->
   </div>
-  <div class="col-sm-8 text-left"> 
-        <p>Which characteristics would you like to see for all cohorts?</p>
+  <div class="col-sm-8 text-left">
+      <h3> Cohorts information</h3>
+        <h5>Which characteristics would you like to see for all cohorts?</h5>
 
     <form action="form_action.asp">
     <input type="checkbox" name="characteristic" value="Cohorts">Cohorts<br>
@@ -121,6 +190,8 @@
     <input type="button" onclick="generate_table()" value="Generate Table">
     <br><br>
     </form>
+    <div id = "cohort_table">
+    </div>
   </div>
 </div>
 <script>
@@ -133,7 +204,7 @@
 
         // check the checkboxes (numbers)
         // get the reference for the body
-        var body = document.getElementsByTagName("body")[0];
+        var body = document.getElementById("cohort_table");
        
         // creates a <table> element and a <tbody> element
         var tbl     = document.createElement("table");
@@ -169,6 +240,7 @@
     });
   }     
 </script>
+        <script src="javascript/riskgraph2.js" ></script>
 <script>
 function show_name() {
   // var bi = document.getElementsByTagName("body")[0]
@@ -178,7 +250,7 @@ function show_name() {
   document.body.appendChild(btn); 
 }
 </script>
-<script src="javascript/chemicals.js" ></script>
+<!-- <script src="javascript/chemicals.js" ></script> -->
 <footer class="container-fluid text-center">
   <div class="col-sm-12">
     <p>Footer Text</p>
