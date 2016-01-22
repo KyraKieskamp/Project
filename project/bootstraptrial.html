@@ -9,6 +9,29 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="d3/d3.min.js" charset="utf-8"></script>
   <style>
+  #wrapper {
+     position: relative;
+     float: left;
+     top: 20px;
+     font-family: sans-serif;
+     font-size: 10px;
+  }
+
+  #tooltip{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:black;
+  }
+
+</style>
+  
+<body>
+
+<link rel="stylesheet" type="text/css" href="http://mostapharoudsari.github.io/Honeybee/pc_source_files/css/d3.parcoords.css">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src = "http://mostapharoudsari.github.io/Honeybee/pc_source_files/d3/d3.parcoords.js"></script>
+  <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -173,83 +196,62 @@
     </div> -->
   </div>
   <div class="col-sm-8 text-left">
-      <h3> Cohorts information</h3>
+    <div id="wrapper" class="parcoords" style="width:100%; height:420px"></div>
+    <br><br><br>
+      <div id="cohorts_table">
+        <h4>Cohort Table</h4>
         <h5>Which characteristics would you like to see for all cohorts?</h5>
-
-    <form action="form_action.asp">
-    <input type="checkbox" name="characteristic" value="Cohorts">Cohorts<br>
-    <input type="checkbox" name="characteristic" value="Weight_24m_(kg)">Weight 24m (kg)<br>
-    <input type="checkbox" name="characteristic" value="Birth_weight_(g)">Birth weight (g)<br>
-    <input type="checkbox" name="characteristic" value="Birth length (cm)">Birth length (cm)<br>
-    <input type="checkbox" name="characteristic" value="Gestational age (weeks)">Gestational age (weeks)<br>
-    <input type="checkbox" name="characteristic" value="Male">Male<br>
-    <input type="checkbox" name="characteristic" value="Female">Female<br>
-    <input type="checkbox" name="characteristic" value="Maternal age (years)">Maternal age (years)<br>
-    <input type="checkbox" name="characteristic" value="Maternal pre-pregnancy BMI">Maternal pre-pregnancy BMI<br>
-    <br>
-    <input type="button" onclick="generate_table()" value="Generate Table">
-    <br><br>
-    </form>
-    <div id = "cohort_table">
+        <form action="form_action.asp">
+          <input type="checkbox" name="characteristic" value="Cohorts">Cohorts<br>
+          <input type="checkbox" name="characteristic" value="Weight_24m_(kg)">Weight 24m (kg)<br>
+          <input type="checkbox" name="characteristic" value="Birth_weight_(g)">Birth weight (g)<br>
+          <input type="checkbox" name="characteristic" value="Birth length (cm)">Birth length (cm)<br>
+          <input type="checkbox" name="characteristic" value="Gestational age (weeks)">Gestational age (weeks)<br>
+          <input type="checkbox" name="characteristic" value="Male">Male<br>
+          <input type="checkbox" name="characteristic" value="Female">Female<br>
+          <input type="checkbox" name="characteristic" value="Maternal age (years)">Maternal age (years)<br>
+          <input type="checkbox" name="characteristic" value="Maternal pre-pregnancy BMI">Maternal pre-pregnancy BMI<br>
+          <br>
+          <input type="button" onclick="generate_table()" value="Generate Table">
+          <br><br>
+        </form>
+      <div id = "cohort_table">
+      </div>
+    </div>
+    <div id="scatterplot_checkbox">
+      <h4>Change in chemicals and change in effects - plot </h4>
+      <h5>Which chemical would you like to see on the yaxis, check one?</h5>
+      <form action="form_action.asp">
+        <input type="checkbox" name="chemical" value="change in PCB-153">change in PCB-153<br>
+        <input type="checkbox" name="chemical" value="change in pp'DDE">change in pp'DDE<br>
+      </form>
+      <form>
+        <h5>Which characteristic would you like to see on the xaxis, check one?</h5>
+        <input type="checkbox" name="char_xaxis" value="change in weight (g)">change in weight (g)<br>
+        <input type="checkbox" name="char_xaxis" value="change in length (cm)">change in length (cm)<br>
+        <input type="checkbox" name="char_xaxis" value="change in weight/length">change in weight/length<br>
+        <br>
+        <input type="button" onclick="generate_scatterplot()" value="Generate Plot">
+        <br><br>
+      </form>
+      <div id = "scatterplot">
+      </div>
     </div>
   </div>
 </div>
-<script>
-  function generate_table() {
-    // to be done: remove table if the table was there before
-
-    d3.json("data/cohort_trial.json", function(error, json) {
-        if (error) return console.warn(error);
-        data = json;
-
-        // check the checkboxes (numbers)
-        // get the reference for the body
-        var body = document.getElementById("cohort_table");
-       
-        // creates a <table> element and a <tbody> element
-        var tbl     = document.createElement("table");
-        var tblBody = document.createElement("tbody");
-       
-      var characteristics = document.forms[0];
-      // console.log(characteristics)
-      var i;
-      for (i = 0; i < characteristics.length; i++) {
-          if (characteristics[i].checked) {
-            // creates a table row
-          var row = document.createElement("tr");
-          // create the cells for each row
-             for (var j = 0; j < data[i].length; j++) {
-            // Create a <td> element and a text node, make the text
-            // node the contents of the <td>, and put the <td> at
-            // the end of the table row
-        var cell = document.createElement("td");
-        var cellText = document.createTextNode(data[i][j]);
-        cell.appendChild(cellText);
-        row.appendChild(cell);
-        }
-          }
-          tblBody.appendChild(row);
-    }
-
-        // put the <tbody> in the <table>
-        tbl.appendChild(tblBody);
-        // appends <table> into <body>
-        body.appendChild(tbl);
-        // sets the border attribute of tbl to 2;
-        tbl.setAttribute("border", "2");      
-    });
-  }     
-</script>
-        <script src="javascript/riskgraph2.js" ></script>
-<script>
-function show_name() {
-  // var bi = document.getElementsByTagName("body")[0]
-  var btn = document.createElement("BUTTON");        // Create a <button> element
-  var t = document.createTextNode("CLICK ME");       // Create a text node
-  btn.appendChild(t);                                // Append the text to <button>
-  document.body.appendChild(btn); 
-}
-</script>
+<script src="javascript/scatterplot.js" ></script>
+<script src="javascript/parallel_coordinates.js" ></script>
+<script src="javascript/generate_table.js" ></script>
+<script src="javascript/riskgraph2.js" ></script>
+// <script>
+// function show_name() {
+//   // var bi = document.getElementsByTagName("body")[0]
+//   var btn = document.createElement("BUTTON");        // Create a <button> element
+//   var t = document.createTextNode("CLICK ME");       // Create a text node
+//   btn.appendChild(t);                                // Append the text to <button>
+//   document.body.appendChild(btn); 
+// }
+// </script>
 <!-- <script src="javascript/chemicals.js" ></script> -->
 <footer class="container-fluid text-center">
   <div class="col-sm-12">
@@ -258,3 +260,7 @@ function show_name() {
 
 </body>
 </html>
+
+
+
+

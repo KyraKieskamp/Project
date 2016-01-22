@@ -41,3 +41,11 @@ For the interactive table a decision needs to be made to have a feature where yo
 # day 12
 Tuesday
 Create a basic interactive (checkbox) table first. Then continue with the bar graph. Continue with the interactive (chekbox) - full data - table at a later point this week. Right now, the checkbox and table build up is functional in testCheckbox.html using both html and javascript and d3 to load in the data. 
+
+# day 14 
+Thursday
+Create a scatterplot graph, with data from two chemicals and the cohorts (ppDDe and PBC153). Possibly make a parallel coordinates visualization for the cohorts information. 
+
+$ day 15
+Friday
+Definately Parallel Coordinates graph. Add the interaction between chemicals and effects in a linked graph, perhaps still light up the chemicals with a colour when clicked. 

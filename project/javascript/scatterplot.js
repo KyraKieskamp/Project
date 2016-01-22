@@ -1,41 +1,23 @@
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-
-<!-- Example based on http://bl.ocks.org/mbostock/3887118 -->
-<!-- Tooltip example from http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html -->
-
-<style>
-body {
-  font: 11px sans-serif;
+function generate_scatterplot(){
+  var chemicals = document.forms[1];
+  var i;
+  for (i = 0; i < chemicals.length; i++) {
+    if (chemicals[i].checked) {
+      var chemical = chemicals[i].value
+    }
+  }
+  var value = document.forms[2];
+  var i;
+  for (i = 0; i < value.length; i++) {
+    if (value[i].checked) {
+      var val = value[i].value
+    }
+  }
+  scatterplot(val, chemical)
 }
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
 
-.dot {
-  stroke: #000;
-}
 
-.tooltip {
-  position: absolute;
-  width: 200px;
-  height: 28px;
-  pointer-events: none;
-}
-</style>
-<body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-
-<script>
-
-scatterplot("change in weight (g)", "change in PCB-153")
-scatterplot("change in length (cm)", "change in PCB-153")
-scatterplot("change in weight/length", "change in PCB-153")
 
 function scatterplot(xaxislabel, yaxislabel){ 
 
@@ -70,7 +52,7 @@ function scatterplot(xaxislabel, yaxislabel){
       color = d3.scale.category10();
 
   // add the graph canvas to the body of the webpage
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("body").selectAll("#scatterplot").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -166,7 +148,3 @@ function scatterplot(xaxislabel, yaxislabel){
         .text(function(d) { return d;})
   });
 }
-
-</script>
-</body>
-</html>
