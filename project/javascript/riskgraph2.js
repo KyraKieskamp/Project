@@ -4,8 +4,8 @@ function InitChart(chemical) {
 var chemical = chemical
 console.log("hello")
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
-      width = 960 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
+      width = 560 - margin.left - margin.right,
+      height = 300 - margin.top - margin.bottom;
 
   // scaling x values
   var x = d3.scale.ordinal()

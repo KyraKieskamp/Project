@@ -10,6 +10,7 @@ dynamical table: https://developer.mozilla.org/en-US/docs/Traversing_an_HTML_tab
 scatterplot: http://bl.ocks.org/weiglemc/6185069
 parallel coordinates: http://bl.ocks.org/jasondavies/1341281
 http://bl.ocks.org/mostaphaRoudsari/b4e090bb50146d88aec4
+concept map: http://bl.ocks.org/virtuald/ea7438cb8c6913196d8e
 
 
 The goal of this project is to create a general and understandable interactive overview of the OBELIX research (or part of the research for the Minimum Viable Product) for the general public. The Obelix study is a large scale research investigating the effect of certain chemicals on potential development of obesity. In the overview various objectives of this study will be visualized and final results will be presented. 

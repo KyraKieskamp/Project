@@ -1,0 +1,79 @@
+[
+    [
+        "bpa male", 
+        [
+            "increase in body weight", 
+            "decrease in circulating glucagon", 
+            "decrease in physical activity"
+        ]
+    ], 
+    [
+        "bpa female", 
+        [
+            "decrease in body weight", 
+            " decrease in serum lipids", 
+            "decrease in fat pad weights", 
+            "changes in endocrine profile"
+        ]
+    ], 
+    [
+        "dehp male", 
+        [
+            "effects on serum lipid profiles", 
+            "altered serum glucose levels", 
+            "cytokine responses of cultured spleen cells", 
+            "object recognition test"
+        ]
+    ], 
+    [
+        "dehp female", 
+        [
+            "effects on spleen weight", 
+            "cytokine responses of cultured spleen cells", 
+            "object recognition test"
+        ]
+    ], 
+    [
+        "pcb153 male", 
+        [
+            "decreases in body weight", 
+            "increase of serum free fatty acids", 
+            "increase of glucose at necropsy"
+        ]
+    ], 
+    [
+        "pcb153 female", 
+        [
+            "increase in serum glucagon levels", 
+            "effects on organ anthropometics"
+        ]
+    ], 
+    [
+        "pfoa male", 
+        [
+            "no effects mentioned"
+        ]
+    ], 
+    [
+        "pfoa female", 
+        [
+            "decrease in body weight", 
+            "decrease in fat pad weights", 
+            "low serum triglycerides and cholesterol (metabolic dysregulation)"
+        ]
+    ], 
+    [
+        "tcdd male", 
+        [
+            "decrease in body weight", 
+            "splenocyte stimulation response"
+        ]
+    ], 
+    [
+        "tcdd female", 
+        [
+            "increase in body weight", 
+            "splenocyte stimulation response"
+        ]
+    ]
+]

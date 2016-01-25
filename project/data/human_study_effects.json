@@ -1,0 +1,32 @@
+[
+    [
+        "dde \n male and female", 
+        [
+            "positive association to serum levels of leptin (7y)", 
+            "increase in growth(6y)", 
+            "increase in BMI(6y)"
+        ]
+    ], 
+    [
+        "dde \n female only", 
+        [
+            "higher insulin levels"
+        ]
+    ], 
+    [
+        "pcb153 \n male and female", 
+        [
+            "negative association birth weight", 
+            "positive association SGA", 
+            "lower leptin levels(7y)(post)", 
+            "decrease in growth(post)"
+        ]
+    ], 
+    [
+        "pfoa \n male and female", 
+        [
+            "positive association SGA", 
+            "low serum levels of adiponectin(7y)"
+        ]
+    ]
+]

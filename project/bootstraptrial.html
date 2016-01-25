@@ -25,7 +25,43 @@
   }
 
 </style>
-  
+<style>
+
+svg {
+    font: 12px sans-serif;
+}
+
+text {
+    pointer-events: none;
+}
+
+.inner_node rect {
+    pointer-events: all;
+}
+
+.inner_node rect.highlight {
+    stroke: #315B7E;
+    stroke-width: 2px;
+}
+
+.outer_node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+    pointer-events: all;
+}
+
+.outer_node circle.highlight
+{
+    stroke: #315B7E;
+    stroke-width: 2px;
+}
+
+.link {
+    fill: none;
+}
+
+</style>   
 <body>
 
 <link rel="stylesheet" type="text/css" href="http://mostapharoudsari.github.io/Honeybee/pc_source_files/css/d3.parcoords.css">
@@ -39,7 +75,7 @@
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: 850px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -63,6 +99,11 @@
       }
       .row.content {height:auto;} 
     }
+  </style>
+  <style>
+  table#table2 tr:nth-child(1) td:nth-child(1) {
+    background-color: #eee;
+  }
   </style>
 </head>
 <body>
@@ -96,20 +137,20 @@
     <div class="col-sm-2 sidenav">
       <div id = "chemicals">
       </div>
-      <img  src="images/bpa_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
-      <input type="button" onclick= "InitChart('bpa')" value="bpa">
-      <img  src="images/bde-47_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
-      <input type="button" onclick= "InitChart('bde47')" value="bde47">
-      <img  src="images/dde_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
-      <input type="button" onclick= "InitChart('p'pdde)" value="p'pdde">
-      <img  src="images/deph_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
-      <input type="button" onclick= "InitChart('dehp')" value="dehp">
-      <img  src="images/PCB153_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
-      <input type="button" onclick= "InitChart('pcb153')" value="pcb153">
-      <img  src="images/pfoa_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
-      <input type="button" onclick= "InitChart('pfoa')" value="pfoa">
-      <img  src="images/tcdd_button.png" class="img-rounded" alt="Chemical button" height="100" width="100"> </img>
-      <input type="button" onclick= "InitChart('tcdd')" value="tcdd">
+      <img  src="images/bpa_button.png" class="img-rounded" alt="Chemical button" height="100" width="100" > </img>
+      <input type="button" onclick= "InitChart('bpa')" value="bpa" style = "position: relative; left: 50px">
+      <img  src="images/bde-47_button.png" class="img-rounded" alt="Chemical button"  style="position: relative; left: -145px; top: 100px; height: 100px; width: 100px"> </img>
+      <input type="button" onclick= "InitChart('bde47')" value="bde47" style="position: relative; left: 135px; top: 0">
+      <img  src="images/dde_button.png" class="img-rounded" alt="Chemical button" style="position: relative; left: -70px; top: 100px; height: 100px; width: 100px"> </img>
+      <input type="button" onclick= "InitChart('p'pdde)" value="p'pdde" style="position: relative; left: -25px; top: 100px">
+      <img  src="images/deph_button.png" class="img-rounded" alt="Chemical button" style="position: relative; left: 7px; top: 100px; height: 100px; width: 100px"> </img>
+      <input type="button" onclick= "InitChart('dehp')" value="dehp" style="position: relative; left: 55px; top: 100px">
+      <img  src="images/PCB153_button.png" class="img-rounded" alt="Chemical button" style="position: relative; left: -147px; top: 200px; height: 100px; width: 100px"> </img>
+      <input type="button" onclick= "InitChart('pcb153')" value="pcb153" style="position: relative; left: 130px; top: 100px">
+      <img  src="images/pfoa_button.png" class="img-rounded" alt="Chemical button" style="position: relative; left: -79px; top: 200px; height: 100px; width: 100px"> </img>
+      <input type="button" onclick= "InitChart('pfoa')" value="pfoa" style="position: relative; left: -30px; top: 200px">
+      <img  src="images/tcdd_button.png" class="img-rounded" alt="Chemical button" style="position: relative; left: -47px; top: 200px; height: 100px; width: 100px"> </img>
+      <input type="button" onclick= "InitChart('tcdd')" value="tcdd" style="position: relative; left: 0px; top: 200px">
 <!--       <p><a href="#">Link</a></p> -->
     </div>
     <div class="col-sm-8 text-left"> 
@@ -122,27 +163,10 @@
         related disorders later in life. OBELIX investigated six major classes of EDCs, including dioxins, polychlorinated
         biphenyls, brominated flame retardants, organochlorine pesticides, phthalates, and perfluorinated alkyl acids (PFAAs) (obtained from OBELIX report summary).
         </p>
-        <hr>
-      <h3>Project Context and Objectives:</h3>
-        <p>The incidence of childhood obesity has reached epidemic proportions globally. Despite advancements in knowledge on
-        the endocrine and neuronal regulation of energy balance, there is still much uncertainty related to the etiology and
-        P age 1 o f 12
-        Research
-        and Innovation
-        underlying physiological mechanisms of obesity. There is accumulating evidence that factors that influence long-term
-        risk of obesity and related disorders begin very early in life. Early life exposure to environmental contaminants has
-        been implicated in altering developmental metabolic programming, resulting in possible higher susceptibility to obesity.
-        The OBELIX (OBesogenic Endocrine disrupting chemicals: LInking prenatal eXposure to the development of obesity later
-        in life) project examines the hypothesis that prenatal exposure to endocrine disrupting compounds (EDCs) in food plays
-        a role in the development of obesity later in life. This project focused on assessing prenatal exposure to chemicals
-        from six major classes of EDCs found in food including dioxins and dioxin-like polychlorinated biphenyls (PCBs), nondioxin-
-        like PCBs, brominated flame retardants (BFRs), organochlorine pesticides, phthalates and perfluorinated alkyl
-        acids (PFAAs), e.g. perfluorooctanoic acid (PFOA) and perfluorooctanesulfonate (PFOS).</p>
-
-      <hr>
+           <hr>
       <h3>Risk Assessment</h3>
-        <div id = "risk_assessment">
-        </div>
+      <div id = "risk_assessment">
+      </div>
       <p>Lorem ipsum...</p>
         <p>One of the main goals of OBELIX is to ascertain if there are risks for obesity or related metabolic disorders in children
         at current background levels of EDCs. To this end, we performed risk assessment using the 5 EDCs that were tested in
@@ -160,19 +184,43 @@
         important exposure routes into account. Where possible we also used calculated food exposure data from WP3, in
         which food frequency questionnaires (FFQ) from FLEHS, Michalovce and LINC were used to calculate exposure to EDCs
         through the diet.</p>
+        <hr>
+      <h3>Project Context and Objectives:</h3>
+        <p>The incidence of childhood obesity has reached epidemic proportions globally. Despite advancements in knowledge on
+        the endocrine and neuronal regulation of energy balance, there is still much uncertainty related to the etiology and
+        P age 1 o f 12
+        Research
+        and Innovation
+        underlying physiological mechanisms of obesity. There is accumulating evidence that factors that influence long-term
+        risk of obesity and related disorders begin very early in life. Early life exposure to environmental contaminants has
+        been implicated in altering developmental metabolic programming, resulting in possible higher susceptibility to obesity.
+        The OBELIX (OBesogenic Endocrine disrupting chemicals: LInking prenatal eXposure to the development of obesity later
+        in life) project examines the hypothesis that prenatal exposure to endocrine disrupting compounds (EDCs) in food plays
+        a role in the development of obesity later in life. This project focused on assessing prenatal exposure to chemicals
+        from six major classes of EDCs found in food including dioxins and dioxin-like polychlorinated biphenyls (PCBs), nondioxin-
+        like PCBs, brominated flame retardants (BFRs), organochlorine pesticides, phthalates and perfluorinated alkyl
+        acids (PFAAs), e.g. perfluorooctanoic acid (PFOA) and perfluorooctanesulfonate (PFOS).</p>
+
+   
 
         <hr>
         <h3>Effects of chemicals</h3>
         <div id = "chemicals_effect">
         </div>
-      <p>Lorem ipsum...</p>
+      <h4>Mouse model effects</h4>
         <p>A total of 5 long term animal studies were carried out in OBELIX. The selected test EDCs were BPA, PFOA, TCDD, DEHP
         and PCB 153. Maternal exposure to the chemicals at low concentrations (generally below NOAEL for developmental
         toxicity) was given through the diet during pre-mating, gestation and lactation (total of 9 weeks). C57BL/6 (B6) dams
         were mated with FVB males, and after weaning, exposure was stopped, and the F1 progeny were maintained for a
         period of 20 to 55 weeks of age.</p>
+        <div id = "mouse_model" > 
+        </div>
+        <div id = "mouse_model2" style="position: relative; left: 800px; top: -500px; z-index: 0; right: 100px; width: 200px; height: 100px">
+ <!-- <input type="button" onclick="generate_table2()" value="Generate Table">  --> 
+        </div>
 
         <hr>
+      <h4>Human model effects</h4>
         <p>Growth during early childhood and BMI at 6 years showed an relation with early life exposure to EDCs. Pooling cohorts
         gave a large sample size, allowing distinction between investigation of effects due to (modelled) prenatal and postnatal
         exposure to PCBs, DDE and HCB. Distinct effects were observed for the different chemicals depending on pre- or
@@ -180,6 +228,8 @@
         DDE exposure. In contrast, a significant decrease in growth was associated with postnatal PCB-153 exposure (Iszatt et
         al, 2014, submitted). Preliminary studies also indicate a relation with perinatal exposure to dioxin-like compounds and
         BMI at 6 years (Iszatt et al, in preparation).</p>
+        <div id = "human_model"> 
+        </div>
 
     </div>
     <div class="col-sm-6 text-left"> 
@@ -243,6 +293,10 @@
 <script src="javascript/parallel_coordinates.js" ></script>
 <script src="javascript/generate_table.js" ></script>
 <script src="javascript/riskgraph2.js" ></script>
+<script src="javascript/conceptmap_mouse_effects.js" ></script>
+<script src="javascript/generate_table2.js" ></script>
+
+<!-- <script src="javascript/conceptmap_human_effects.js" ></script> -->
 // <script>
 // function show_name() {
 //   // var bi = document.getElementsByTagName("body")[0]
