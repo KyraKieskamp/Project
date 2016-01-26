@@ -37,7 +37,7 @@ console.log("hello")
   // initiating data
   d3.tsv("../data/chemicals2.tsv", type, function(error, data){
     if (error) throw error;
-console.log(data)
+    console.log(data[0].chemicals)
 
     x.domain(data.map(function(d) { return d.Chemicals; }));
     y.domain([0, d3.max(data, function(d) {return d[chemical]; })]);

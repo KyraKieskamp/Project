@@ -1,7 +1,7 @@
 Chemicals	bpa	pfoa	tcdd	pcb153	dehp
-obelix	0.28	0.255	0	0	44
-efsa	5	0	0	0	50
+TDI -OBELIX	0.28	0.255	0	0	44
+TDI -EFSA	5	0	0	0	50
 exposure	0.132	0.0002	0	0	0
-bb-obelix	0	0	4	0	0
-bb-efsa	0	0	0	0	0
-bb-exposure	0	0	0.86	0	0
+BB-OBELIX	0	0	4	0	0
+BB-EFSA	0	0	0	0	0
+BB-exposure	0	0	0.86	0	0

@@ -4,7 +4,7 @@
     d3.json("data/cohort_trial.json", function(error, json) {
         if (error) return console.warn(error);
         data = json;
-
+        console.log(data)
         // check the checkboxes (numbers)
         // get the reference for the body
         var body = document.getElementById("cohort_table");
@@ -25,6 +25,7 @@
             // Create a <td> element and a text node, make the text
             // node the contents of the <td>, and put the <td> at
             // the end of the table row
+            console.log(data[i])
         var cell = document.createElement("td");
         var cellText = document.createTextNode(data[i][j]);
         cell.appendChild(cellText);

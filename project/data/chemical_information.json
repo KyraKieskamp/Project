@@ -1,0 +1,35 @@
+[
+    [
+        "Chemicals", 
+        "NA", 
+        "bpa", 
+        "bde47", 
+        "dde", 
+        "dehp", 
+        "pcb153", 
+        "pfoa", 
+        "tcdd"
+    ], 
+    [
+        "full name", 
+        "NA", 
+        "bisphenol A", 
+        "bis(2,4-dibromophenyl) ether", 
+        "dichlorodiphenyldichloroethylene", 
+        "Bis(2-ethylhexyl) phthalate", 
+        "PCB-153", 
+        "Perfluorooctanoic Acid", 
+        "2,3,7,8-Tetrachlorodibenzo-p-dioxin"
+    ], 
+    [
+        "Chemical source ", 
+        "if not mentioned otherwise, found at efsa (European Food Safety Authority)", 
+        "hello1", 
+        "hello2", 
+        "hello3", 
+        "hello4", 
+        "hello5", 
+        "hello6", 
+        "hello7"
+    ], 
+]

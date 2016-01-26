@@ -1,35 +1,82 @@
 [
     [
-        "effect 1", 
-        "effect 2", 
-        "effect 3", 
-        "effect 4"
+        "decrease in circulation glucagon", 
+        "effects on spleen weight", 
+        "increase in body weight", 
+        "object recognition test", 
+        "", 
+        ""
     ], 
     [
-        "effect 5", 
-        "effect 6", 
-        "effect 7", 
-        "effect 8"
+        "Glucagon is a hormone which increases the concentration of glucose in the bloodstream. Glucose serves as energy for the human/animal body", 
+        "The spleen is an organ which acts primarily as a blood filter.", 
+        "Body weight is the amount that a mouse weights.", 
+        "The object recognition test was conducted. In this case the mice served better on this test", 
+        "", 
+        ""
     ], 
     [
-        "effect 9", 
-        "effect 10", 
-        "effect 11", 
-        "effect 12"
+        "decrease in body weight", 
+        "increase of serum free fatty accids ", 
+        "decrease in physical activity", 
+        "decrease in body weight", 
+        "", 
+        ""
     ], 
     [
-        "effect 13", 
-        "effect 14", 
-        "effect 15", 
-        "effect 16"
+        "Body weight is the amount that a mouse weights.", 
+        "The amount of fatty acids in the serum, part of the plasma in the blood, is increased. ", 
+        "Physical activity is the amount of movement of the mouse. ", 
+        "Body weight is the amount that a mouse weights.", 
+        "", 
+        ""
     ], 
     [
-        "effect 17", 
-        "effect 18", 
-        "effect 19", 
-        "effect 20"
+        "decrease in fat pad weights", 
+        "increase in serum glucagon levels", 
+        "decrease in serum lipids", 
+        "increase of glucose at necropsy", 
+        "", 
+        ""
     ], 
     [
+        "Fat pads is an amount of packed fat cells. ", 
+        "Glucagon, hormone affecting the glucose (energy in the body) levels. Serum: part of the blood", 
+        "Lipids are naturally occuring molecules in the body, like fats, vitamins etc. ", 
+        "Necropsy is when a cell dies. ", 
+        "", 
+        ""
+    ], 
+    [
+        "effects on serum lipid profiles", 
+        "no effects mentioned", 
+        "changes in endocrine profile", 
+        "effects on organ anthropometics", 
+        "", 
+        ""
+    ], 
+    [
+        "The lipid profile is a screening of the lipids (such as cholesterol)", 
+        "No effects were mentioned ", 
+        "The endocrine profile is the sceening of the hormones. ", 
+        "The organ anthropometrics is the phylical properties of the organs, such as size and shape", 
+        "", 
+        ""
+    ], 
+    [
+        "increases of cultured spleen cells", 
+        "splenocyte stimulation response", 
+        "altered serum glucose", 
+        "low serum triglycerides and cholesterol", 
+        "", 
+        ""
+    ], 
+    [
+        "NA", 
+        "", 
+        "Altered levels of the glucose in teh serum ", 
+        "Low levels of both triglycerides, a kind of fat, and cholestrol in the serum. ", 
+        "", 
         ""
     ]
 ]

@@ -1,8 +1,8 @@
-Cohort;Weight 24m (kg);Birth weight (g);Birth length (cm);Gestational age (weeks);Male;Female;Maternal pre-pregnancy BMI
-Duisburg;13.56;87.4;52;40;108;114;23
-ELFE;12;87.6;49;40;18;17;21.5
-FLEHSl;12.53;88;50.7;40;72;62;22.4
-GRD;13.21;88.6;52.5;40;322;266;22.1
-HUMIS;12.19;86.3;51;40;203;195;23.3
-Mihcalovce;13.66;86.2;50;40;477;459;21.2
-PELAGIE;12.39;87.5;50;40;92;79;21.9
+Cohort;Weight 24m (kg);Height 24m (cm);Birth weight (g);Birth length (cm);Gestational age (weeks);Male;Female
+Duisburg;13.56;87.4;3.46;52;40;108;114
+ELFE;12;87.6;3.34;49;40;18;17
+FLEHSl;12.53;88;3.383;50.7;40;72;62
+GRD;13.21;88.6;3.5;52.5;40;322;266
+HUMIS;12.19;86.3;3.68;51;40;203;195
+Mihcalovce;13.66;86.2;3.37;50;40;477;459
+PELAGIE;12.39;87.5;3.37;50;40;92;79

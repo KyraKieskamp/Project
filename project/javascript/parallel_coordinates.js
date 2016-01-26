@@ -43,7 +43,7 @@ update_colors(d3.keys(data[0])[2]);
 graph.svg.selectAll(".dimension")
     .on("click", update_colors)
     .selectAll(".label")
-    	.style("font-size", "14px"); // change font sizes of selected lable
+    	.style("font-size", "12px"); // change font sizes of selected lable
 
 //add hover event
 d3.select("#wrapper svg")
@@ -165,7 +165,7 @@ function addTooltip(clicked, clickedCenPts){
 	};
 
 	// add rectangles
-	var fontSize = 14;
+	var fontSize = 12;
 	var padding = 2;
 	var rectHeight = fontSize + 2 * padding; //based on font size
 
