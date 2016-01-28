@@ -49,7 +49,7 @@ function scatterplot(xaxislabel, yaxislabel){
   // setup y
   var yValue = function(d) { return d[ylabel];}, // data -> value
       yScale = d3.scale.linear().range([height, 0]), // value -> display
-      yMap = function(d) { return yScale(yValue(d));}, // data -> display
+      yMap = function(d) { return yScale(yValue(d));} , // data -> display
       yAxis = d3.svg.axis().scale(yScale).orient("left");
 
   // setup fill color

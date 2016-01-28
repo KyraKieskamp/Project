@@ -35,7 +35,7 @@ console.log("hello")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
-      .attr("transform", "translate("+ margin.left + "," + margin.top + ")");
+      .attr("transform", "translate("+ margin.left + "," + margin.top + ")")
 
   // initiating data
   d3.tsv("data/chemicals2.tsv", type, function(error, data){
@@ -44,6 +44,11 @@ console.log("hello")
 
     x.domain(data.map(function(d) { return d.Chemicals; }));
     y.domain([0, d3.max(data, function(d) {return d[chemical]; })]);
+    
+    //Title
+    svg.append("g")
+      .append("text")
+        .text(chemical);
 
     // appending x-axis
     svg.append("g")

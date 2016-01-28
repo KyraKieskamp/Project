@@ -77,29 +77,30 @@
         underlying physiological mechanisms of obesity. There is accumulating evidence that factors that influence long-term
         risk of obesity and related disorders begin very early in life. Early life exposure to environmental contaminants has
         been implicated in altering developmental metabolic programming, resulting in possible higher susceptibility to obesity.
-        The OBELIX (OBesogenic Endocrine disrupting chemicals: LInking prenatal eXposure to the development of obesity later
-        in life) project examines the hypothesis that prenatal exposure to endocrine disrupting compounds (EDCs) in food plays
+        The OBELIX project examines the hypothesis that prenatal exposure to endocrine disrupting compounds (EDCs) in food plays
         a role in the development of obesity later in life. (Text obtained from OBELIX report summary). </p>
         <p> Risk assessement, effects of mouse study, some effects of human study, and explanations of the human study group, called the cohorts</p>
       <hr>
 
       <h3>Risk Assessment</h3>
+      <p></p> Click on one of the chemicals on the left side to obtain the risk assessment bar graph (the chemicals DDE and BDE-47 do not have data). Whenever the TDI (tolerable daily intake) or BB (body burden) found in the OBELIX study (TDI-OBELIX/BB-OBELIX) is lower than the TDI or the BB found by the European Food and Safety Authority (EFSA), this can be seen as a risk. If the tolerable daily intake or the body burden is namely lower than thought, humans could be exposed to higher concentrations of chemicals than is health-wise acceptable. 
       <div id = "risk_assessment">
       </div>
+      <h4> Further information on Risk Assessment </h4>
         <p>One of the main goals of OBELIX is to ascertain if there are risks for obesity or related metabolic disorders in children
         at current background levels of EDCs. To this end, the researchers performed risk assessment using the 5 EDCs that were tested in
-        animal studies in WP5. Two of the OBELIX EDCs, namely DDE and BDE-47, were not included in this risk assessment
+        animal studies. Two of the OBELIX EDCs, namely DDE and BDE-47, were not included in this risk assessment
         exercise, as the researchers did not perform animal studies on these compounds in OBELIX. It should be mentioned for DDE,
         however, that a consistent set of observations was found in WP1 indicating that prenatal DDE is associated with
-        accelerated growth in early childhood, and increased BMI and serum leptin levels at age 6 years (see explanation at "Effects"). This would suggest
+        accelerated growth in early childhood, and increased BMI and serum leptin levels at age 6 years. This would suggest
         that current background levels of DDE are not without risk and further examination of health risks of DDE exposure in
         children is warranted. 
         For the risk assessment, we selected the most sensitive critical effect observed in OBELIX animal studies and
         compared this to benchmark dose levels (BMDL) established by EFSA. We then calculated a corresponding tolerable
         daily intake (TDI) level and compared this to exposure and/or body burden (BB) levels reported by EFSA, taking
-        important exposure routes into account. Where possible we also used calculated food exposure data from WP3, in
-        which food frequency questionnaires (FFQ) from FLEHS, Michalovce and LINC were used to calculate exposure to EDCs
-        through the diet. (Text obtained from OBELIX report summary).</p>
+        important exposure routes into account. Where possible we also used calculated food exposure data, in
+        which food frequency questionnaires (FFQ) from cohorts FLEHS, Michalovce and LINC were used to calculate exposure to EDCs
+        through the diet. (Text obtained from OBELIX report summary, slightly adapted).</p>
       <hr>
 
       <h3>Effects of chemicals</h3>
@@ -130,8 +131,8 @@
       <h4>Change in chemicals and change in effects - plot </h4>
       <h5>Which chemical would you like to see on the yaxis, check one?</h5>
       <form action="form_action.asp">
-        <input type="checkbox" name="chemical" value="change in PCB-153">change in PCB-153<br>
-        <input type="checkbox" name="chemical" value="change in pp'DDE">change in pp'DDE<br>
+        <input type="checkbox" name="chemical" value="change in PCB-153">change in PCB-153 (ng/g lipid).<br>
+        <input type="checkbox" name="chemical" value="change in pp'DDE">change in pp'DDE (ng/g lipid).<br>
       </form>
       <form>
         <h5>Which characteristic would you like to see on the xaxis, check one?</h5>
@@ -143,7 +144,7 @@
         <br><br>
       </form>
     </div>
-      <div id = "scatterplot" style="position: relative; left: 600px; top: -250px; z-index: 0; right: 100px; width: 50px; height: 50px">
+      <div id = "scatterplot" style="position: relative; left: 600px; top: -250px; z-index: 0; right: 100px; width: 50px; height: 100px">
       </div>
         <div id = "human_model"> 
         </div>
@@ -210,7 +211,7 @@ $(document).ready(function(){
 <footer class="container-fluid text-center">
   <div class="col-sm-12">
     <p>Copyright © 2016 Kyra Kieskamp, Licensed under the Apache License, Version 2.0.</p> 
-    <p>Data and text obtained from the Final Report Summary of OBELIX (link given in header). All possible mistakes found in either data or text on this website are solely by the author of this page. </p>
+    <p>Data and text obtained from the Final Report Summary of OBELIX (link given in header). All possible mistakes found in either data or text on this website are solely made by the author of this page. </p>
 </footer>
 
 </body>

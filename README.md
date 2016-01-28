@@ -1,6 +1,6 @@
 # Project
-Project - Data Visualization of the OBELIX research
-Author: Kyra Kieskamp
+Project - Data Visualization of the OBELIX research;
+Author: Kyra Kieskamp;
 Copyright © 2016 Kyra Kieskamp, Licensed under the Apache License, Version 2.0.
 
 
