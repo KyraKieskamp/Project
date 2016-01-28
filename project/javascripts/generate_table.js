@@ -13,7 +13,7 @@
         var tbl     = document.createElement("table");
         var tblBody = document.createElement("tbody");
        
-      var characteristics = document.forms[0];
+      var characteristics = document.forms[2];
       // console.log(characteristics)
       var i;
       for (i = 0; i < characteristics.length; i++) {

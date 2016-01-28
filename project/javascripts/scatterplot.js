@@ -1,12 +1,12 @@
 function generate_scatterplot(){
-  var chemicals = document.forms[1];
+  var chemicals = document.forms[0];
   var i;
   for (i = 0; i < chemicals.length; i++) {
     if (chemicals[i].checked) {
       var chemical = chemicals[i].value
     }
   }
-  var value = document.forms[2];
+  var value = document.forms[1];
   var i;
   for (i = 0; i < value.length; i++) {
     if (value[i].checked) {

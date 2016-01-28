@@ -35,7 +35,7 @@ console.log("hello")
       .attr("transform", "translate("+ margin.left + "," + margin.top + ")");
 
   // initiating data
-  d3.tsv("../data/chemicals2.tsv", type, function(error, data){
+  d3.tsv("data/chemicals2.tsv", type, function(error, data){
     if (error) throw error;
     console.log(data[0].chemicals)
 

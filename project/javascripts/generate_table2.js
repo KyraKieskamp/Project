@@ -7,7 +7,6 @@ function generate_table2() {
     if (error) return console.warn(error);
     data = json;
     // console.log(data)
-    console.log(data.length)
       // check the checkboxes (numbers)
       // get the reference for the body
     var body2 = document.getElementById("mouse_model2");
@@ -21,7 +20,6 @@ function generate_table2() {
     // console.log(characteristics)
     var i;
     for (i = 0; i < data.length; i++) {
-      console.log(data[i])
       var row2 = document.createElement("tr");
       // create the cells for each row
       for (var j = 0; j < data[i].length; j++) {

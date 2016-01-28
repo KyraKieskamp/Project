@@ -5,7 +5,7 @@
         "bpa", 
         "bde47", 
         "dde", 
-        "dehp", 
+        "deph", 
         "pcb153", 
         "pfoa", 
         "tcdd"
@@ -13,9 +13,9 @@
     [
         "full name", 
         "NA", 
-        "bisphenol A", 
-        "bis(2,4-dibromophenyl) ether", 
-        "dichlorodiphenyldichloroethylene", 
+        "Bisphenol A", 
+        "Bis(2,4-dibromophenyl) ether", 
+        "Dichlorodiphenyldichloroethylene", 
         "Bis(2-ethylhexyl) phthalate", 
         "PCB-153", 
         "Perfluorooctanoic Acid", 
@@ -24,12 +24,70 @@
     [
         "Chemical source ", 
         "if not mentioned otherwise, found at efsa (European Food Safety Authority)", 
-        "hello1", 
-        "hello2", 
-        "hello3", 
-        "hello4", 
-        "hello5", 
-        "hello6", 
-        "hello7"
+        "Bisphenol A (BPA) is a chemical that is mainly used in combination with other chemicals to manufacture plastics and resins. For example, BPA is used in polycarbonate, a high performance transparent, rigid plastic. Polycarbonate is used to make food containers, such as returnable beverage bottles, infant feeding (baby) bottles, tableware (plates and mugs) and storage containers. Residues of BPA are also present in epoxy resins used to make protective coatings and linings for food and beverage cans and vats. BPA can migrate in small amounts into food and beverages stored in materials containing the substance. (Source website: EFSA)", 
+        "Brominated flame retardants (BFRs) are mixtures of man-made chemicals that are added to a wide variety of products, including for industrial use, to make them less flammable. They are used commonly in lastics, textiles and electrical/electronic equipment. In the European Union (EU) the use of certain BFRs is banned or restricte. However, due to their persistence in the environment there are still concerns about the risks these chemicals pose to public health. BFR-treated products, whether in use or waste, leach BFRs into the environment and contaminate the air, soil and water. These contaminants may then enter the food chain where they mainly occur in food of animal origin, such as fish, meat, milk and derived products. (Source website: EFSA)", 
+        "DDT was commercially introduced as an insecticide in the 1940s. Moreover, DDT is used as an intermediate in the production of the pesticide dicofol and may occur as a major impurity in the final product. DDT was banned in many European countries for most uses in the early 1970s. The use of DDT as a pesticide has been very restrictive since 1981 and banned since 1986 in the EU. Although being banned in most countries worldwide, DDT is still used for vector control especially in areas with endemic malaria, and extended use was recently recommended by WHO for indoor residual spraying to control malaria. (Source website: EFSA)", 
+        "Phthalates are found primarily in PVC as softeners but can also be found in other plastics in low concentrations. Phthalates can also be found in e.g. dispersions, paints and varnishes, as emulsifiers, repellents and carrier fluids in biocides, in cosmetics and perfumes. Due to the use of phthalates in articles in the indoor environment as e.g. vinyl floorings, wall paper, furniture and other consumer articles, dust and indoor air are among the main sources for phthalate exposure. (Source website: EFSA)", 
+        "Polychlorinated biphenyls (PCBs) are a widespread class of persistent organic chemicals that accumulate in the environment and humans and are associated with a broad spectrum of health effects. PCBs were widely used for many applications, especially as dielectric fluids in transformers, capacitors and coolants. Due to their toxicity and classification as persistent organic pollutants, processing and distribution of PCB has been prohibited in almost all industrial countries since the late 1980s but they still can be released into the environment from building paint and sealants and poorly maintained hazardous waste sites that contain PCBs. People are exposed to PCBs primarily through contaminated food. (Source website: EFSA)", 
+        "PFOS and PFOA, two man-made chemicals, are increasingly being found in the food chain owing to environmental pollution from industrial practices. These substances have been widely used in industrial and consumer applications, including stain- and water-resistant coatings for fabrics and carpets, oil-resistant coatings for paper products approved for food, fire-fighting foams, floor polishes and insecticides. As these chemicals can accumulate in the body, it can take many years for the body to eliminate them. (Source website: ECHA)", 
+        "Dioxins are a group of persistent organochlorine compounds that are widely dispersed in the environment and accumulate in the food chain. They are formed as a result of thermal reactions, for example during the incineration of municipal waste and other fires. In addition, dioxins are produced as by-products of various industrial processes such as the bleaching of pulp and paper with chlorine gas and the synthesis of certain chlorinated chemicals like chlorophenols, polychlorinated biphenyls (PCBs) and some chlorophenoxy herbicides. The term dioxins in principle refers to a group of 75 polychlorinated dibenzo-p-dioxin (PCDD) and 135 polychlorinated dibenzofuran (PCDF) congeners, but only 17 of these compounds are thought to be relevant in terms of potential adverse effects for humans and animals. (Source website: EFSA)"
     ], 
+    [
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        ""
+    ], 
+    [
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        ""
+    ], 
+    [
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        ""
+    ], 
+    [
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        ""
+    ], 
+    [
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        "", 
+        ""
+    ], 
+    [
+        ""
+    ]
 ]

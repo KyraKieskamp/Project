@@ -1,7 +1,7 @@
 function InitInfo(chemical2) {
 	var chemical2 = chemical2
 
-	d3.json("../data/chemical_information.json", function(error, json){
+	d3.json("data/chemical_information.json", function(error, json){
     	if (error) throw error;
 	    data_chem = json
 	    console.log(data_chem)
@@ -11,7 +11,7 @@ function InitInfo(chemical2) {
 				box.type = "text";
 				document.getElementById("chemicals").appendChild(box);
 				box.value = data_chem[1][i] + data_chem[2][i]; 
-				box.id = boxID;
+				box.id = "boxID";
 			}
 		}
 	});
