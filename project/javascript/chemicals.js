@@ -1,3 +1,5 @@
+/* For the prototype: Function to create the chemicals in the sidenavigation. */
+
 function chemical_images() {
 	d3.json("data/chemical_links.json", function(error, json) {
 		if (error) return console.warn(error);

@@ -1,3 +1,12 @@
+/* Author: Kyra Kieskamp
+// File: Creating a parallel coordinates from cohort characteristics data . 
+//
+// The code is adapted from: 
+// Copyright (c) 2012, Kai Chang
+// All rights reserved.
+// http://bl.ocks.org/jasondavies/1341281
+*/
+
 var color_set = d3.scale.linear()
 	.range(["#3182bd", "#f33"]);
 
@@ -24,7 +33,6 @@ graph = d3.parcoords()('#wrapper')
 		.rate(5)
 		.render()
 		.brushMode("1D-axes")  // enable brushing
-		//.reorderable() // I removed this for now as it can mess up with tooltips
 		.interactive();
 
 // add instruction text
@@ -80,10 +88,6 @@ function update_colors(dimension) {
 
 // Add highlight for every line on click
 function getCentroids(data){
-	// this function returns centroid points for data. I had to change the source
-	// for parallelcoordinates and make compute_centroids public.
-	// I assume this should be already somewhere in graph and I don't need to recalculate it
-	// but I couldn't find it so I just wrote this for now
 	var margins = graph.margin();
 	var graphCentPts = [];
 	
@@ -103,7 +107,6 @@ function getCentroids(data){
 }
 
 function getActiveData(){
-	// I'm pretty sure this data is already somewhere in graph
 	if (graph.brushed()!=false) return graph.brushed();
 	return graph.data();
 }

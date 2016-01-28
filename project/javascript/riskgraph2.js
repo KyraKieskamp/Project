@@ -1,4 +1,7 @@
-// chemical = "bpa"
+/* Author: Kyra Kieskamp
+// File: Function to create the risk graphs for the chemicals. 
+*/
+
 function InitChart(chemical) {
 // margins
 var chemical = chemical
@@ -80,30 +83,13 @@ console.log("hello")
       d3.select(this)
         .attr("fill", "steelblue");
       });
-
-
-    // var dis = svg.append('g');
-
-    // var txt = dis.append('text')
-    //     .attr({ transform: 'translate(5,20)', fill:'red'})
-    //     .text("hello");
-    //     .on("mousemove", function(d) { 
-    //       var mousePos = d3.mouse(this);
-    //       txt.attr({transform: 'translate(' + function(d) { 
-    //     return yRange(d.y)} + ')'});
   });        
 }
 
-// var chemical = "bpa"
+
 function type(d, chemical) {
     d[chemical] = +d[chemical];
     return d;
   }
 
 
-// var svg2 = d3.select("body").append("svg")
-//     .attr("width, 200")
-//     .attr("height", 100)
-//     .style("border", 1px solid black);
-
-// InitChart("bpa")

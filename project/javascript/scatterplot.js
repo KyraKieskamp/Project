@@ -1,3 +1,10 @@
+/* Author: Kyra Kieskamp
+// File: Function to create the scatterplot for the changes in chemicals and changes in human effects. 
+// The scatterplot function is adapted from: 
+// http://bl.ocks.org/weiglemc/6185069
+*/
+
+/* Obtaining the checked box values for the scatterplot. */
 function generate_scatterplot(){
   var chemicals = document.forms[0];
   var i;
@@ -16,9 +23,7 @@ function generate_scatterplot(){
   scatterplot(val, chemical)
 }
 
-
-
-
+/* Generating the scatterplot with the given input */
 function scatterplot(xaxislabel, yaxislabel){ 
 
   var xlabel = xaxislabel
